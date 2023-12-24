@@ -1,0 +1,12 @@
+node init.js 
+nodemon index.js
+
+//terminal 
+mongosh
+use whatsapp
+switched to db whatsapp
+whatsapp> show collections
+chats
+whatsapp> db.chats.find()
+
+whatsapp> db.chats.deleteMany({})
