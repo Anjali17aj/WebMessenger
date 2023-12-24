@@ -39,6 +39,10 @@ chat1.save().then((res) => {
     console.log(res);
 });
 
+app.get("/", (req, res) => {
+    res.redirect("/chats");
+});
+
 //Index Route 
 app.get("/chats", async (req, res) => {
     let chats = await Chat.find();
